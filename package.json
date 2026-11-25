@@ -1,0 +1,7 @@
+{
+  "name": "codo-kiosk",
+  "private": true,
+  "scripts": {
+    "dev:kiosk": "pnpm --filter @codo/kiosk dev"
+  }
+}
