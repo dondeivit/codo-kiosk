@@ -1,7 +1,17 @@
 {
   "name": "codo-kiosk",
   "private": true,
+  "packageManager": "pnpm@12.23.0",
   "scripts": {
-    "dev:kiosk": "pnpm --filter @codo/kiosk dev"
+    "dev:kiosk": "pnpm --filter @codo/kiosk dev",
+    "lint": "pnpm -r lint",
+    "typecheck": "pnpm -r typecheck",
+    "build": "pnpm -r build",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "prettier": "^3.10.1",
+    "prettier-plugin-tailwindcss": "^0.8.1"
   }
 }
